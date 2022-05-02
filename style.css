@@ -61,17 +61,16 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list {
     font-size: 1.25rem;
     line-height: 130%;
+    letter-spacing: 0.03rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
-.menu__item {
+.menu__item > * {
     transition: 0.25s;
 }
-.menu__item:not(:last-child) {
-    margin: 0 20px 0 0;
-}
-.menu__item:hover {
-    color: rgb(255, 255, 255);
+.menu__item > *:hover {
+    color: rgb(248, 246, 246);
 }
 @media(max-width: 1164px) {
     .header__container {
@@ -386,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px 50px;
 }
 .projects__item {
-    transition: 1s;
+    transition: .5s;
     max-width: 320px;
 }
 .projects__item:hover {
